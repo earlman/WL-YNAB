@@ -1,13 +1,17 @@
+# Module: WL-YNAB
+
+This module is a fork of the MMM-YNAB module for use with the WhiteLight project
+
 # MMM-YNAB
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/) which can show remaining dollars in categories from budgets from YNAB.
 
 ![Example of MMM-YNAB](./screenshot.png)
 
-## Installation ##
+## Installation
 
 1. Run `git clone https://github.com/thesoftwarejedi/MMM-YNAB.git` in the directory `~/MagicMirror/modules`
-2. Change directories to the new folder `cd MMM-YNAB` and then run `npm install` 
+2. Change directories to the new folder `cd MMM-YNAB` and then run `npm install`
 
 ## Using the module
 
@@ -15,17 +19,25 @@ To use this module, get a YNAB access token for your YNAB account from https://a
 
 ```js
 var config = {
-    modules: [
-        {
-            module: "MMM-YNAB",
-            position: "top_bar",
-            config: {
-                token: "ADD_YNAB_TOKEN_HERE",
-                categories: [ "Household", "Pets", "Grocery", "Kids Clothes", "Restaurants", "Lunch", "Spontaneous Fun" ]
-            }
-        },
-    ]
-}
+  modules: [
+    {
+      module: "MMM-YNAB",
+      position: "top_bar",
+      config: {
+        token: "ADD_YNAB_TOKEN_HERE",
+        categories: [
+          "Household",
+          "Pets",
+          "Grocery",
+          "Kids Clothes",
+          "Restaurants",
+          "Lunch",
+          "Spontaneous Fun"
+        ]
+      }
+    }
+  ]
+};
 ```
 
 Your own categories will work, but the ones above are default
